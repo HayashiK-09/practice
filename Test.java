@@ -2,17 +2,17 @@ import java.util.*;
 
 public class Test{
 public static void main(String[] args){
-System.out.print("1桁の数字を入力してください＞");
+System.out.print("num = ");
 Scanner sc = new Scanner(System.in);
 int num = sc.nextInt();
 
-int ram = new ramdom().nextInt(9);
+int ram = new Random().nextInt(9);
 
 if(num == ram){
-System.out.println("一致");
+System.out.println("OK");
 }
 else{
-System.out.println("不一致");
+System.out.println("NG");
 }
 System.out.println("num = " + num);
 System.out.println("ram = " + ram);
